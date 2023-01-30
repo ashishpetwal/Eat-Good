@@ -8,20 +8,6 @@ hamBtn.addEventListener("click", () => {
 
 const dots = document.querySelectorAll(".i");
 
-// reviews[0].style.display = "block";
-// reviews[1].style.display = "none";
-// reviews[2].style.display = "none";
-
-
-// let i = 1;
-// setInterval(() => {
-//     reviews[i].style.display = "block"
-//     reviews[(i + 1) % 3].style.display = "none"
-//     reviews[(i + 2) % 3].style.display = "none"
-//     i = (i + 1) % 3;
-// }, 4000);
-
-
 let slideIndex = 1;
 showreviews(slideIndex);
 
