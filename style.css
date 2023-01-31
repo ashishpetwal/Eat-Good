@@ -88,6 +88,7 @@ html {
   outline: none;
   padding: 0.8rem 2.4rem;
   border-radius: 0.4rem;
+  cursor: pointer;
 }
 
 .header .container .book-btn:hover {
@@ -170,7 +171,12 @@ html {
   background-color: rgb(49, 49, 49);
   border-radius: 0.8rem;
   margin: 0.8rem 0;
-  width: 21rem;
+  width: 22rem;
+  transition: .5s;
+}
+
+.specials .items > div:hover{
+  scale: calc(1.05);
 }
 
 .specials .items img {
@@ -308,6 +314,10 @@ html {
 .testimonials .customer-review img {
   width: 6.4rem;
   border-radius: 50%;
+}
+
+.testimonials .dot{
+  cursor: pointer;
 }
 
 .testimonials .curr{
@@ -482,7 +492,7 @@ html {
 @media screen and (max-width: 768px) {
   .header .nav-menu{
     display: flex;
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 8%;
     z-index: 1;
@@ -493,6 +503,12 @@ html {
   }
   .header .nav-menu.active{
     left: 0%;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .footer .col input[type="submit"]{
+    position: absolute;
   }
 }
 
